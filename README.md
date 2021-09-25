@@ -5,84 +5,70 @@
 [![](https://img.shields.io/badge/Facebook-HackintoshLifeIT-informational?style=flat&logo=facebook&logoColor=white&color=3a4dc9)](https://www.facebook.com/hackintoshlife/)
 [![](https://img.shields.io/badge/Instagram-HackintoshLifeIT-informational?style=flat&logo=instagram&logoColor=white&color=8a178a)](https://www.instagram.com/hackintoshlife.it_official/)
 
-## macOS Big Sur/Monterey correttamente installato su Gigabyte Z390 UD
+## macOS Big Sur/Monterey correttamente installato su Xiaomi Notebook Pro 2017/2018
 
 # Specifiche:
 
-| Componenti       | Modello                            |
-| ---------------- | ---------------------------------- |
-| Scheda Madre     | Gigabyte Z390 UD (BIOS 10K)        | 
-| CPU              | Intel i5 9400                      | 
-| iGPU             | Intel® UHD Graphics 630            |
-| Audio            | Realtek ALC887                     |
-| RAM              | 16 Gb DDR4 3200 Mhz                |
-| SSD              | Samsung 750 Evo 250gb              |
-| SMBIOS           | iMac19,1                           |
-| Bootloader       | OpenCore 0.7.3                     |
+| Componenti       | Modello                              |
+| ---------------- | ------------------------------------ |
+| Notebook         | Xiaomi Notebook Pro 2017/2018        | 
+| CPU              | Intel Core i5 8250U/i7 8550U         | 
+| iGPU             | Intel® UHD Graphics 620              |
+| WiFi + Bluetooth | Intel Wireless-AC 8265               |
+| Audio            | Realtek ALC298 (layout 30/99)        |
+| RAM              | 8/16 GB DDR4 2400 Mhz                |
+| NVMe             | Samsung PM961 256gb                  |
+| SMBIOS           | MacBookPro15,2                       |
+| Bootloader       | OpenCore 0.7.3                       |
 
 ![infodp1](./Screenshot/Mobo.png)
 
-## Di default la GUI di OC è impostata in 1920x1080.
-Se avete una risoluzione diversa, recatevi in EFI > OC, cancellate la cartella Resources e scompattate quella che vi interessa.
+## NOTE:
+Ci sarebbe la NVIDIA GeForce MX150/MX250 2gb GDDR5 che però, non essndo comaptibile con macOS viene disattivata per quest'ultimo.
+Kexts aggiornati alle ultime versioni.
 
 ## Se volete installare la Beta 7 di macOS Monterey:
 Vi lascio il config.plist rinominato in configbeta7.plist pronto da utilizzare SOLO per scaricare ed installare l'aggiornamento.
 Al termine dell'aggiornamento dovete cancellarlo e rimettere l'originale config.plist.
 È consigliabile scollegare l'Hackintosh dall'ID Apple prima di sostituire momentaneamente il config.plist
 
-## NOTE:
-Kexts aggiornati alle ultime versioni eccetto USBInjectAll (provvisorio dato che manca mappatura USB) e RealtekRTL8111 che nella versione 2.4.2 dava problemi di instabilità alla connessione LAN almeno nel mio caso.
-
 # Impostazioni Bios
 
 ## Disabilita:
 
 - Fast Boot
-- VT-d
-- CSM
-- Intel SGX
-- Intel Platform Trust
-- CFG Lock (MSR 0xE2 write protection)
+- Secure Boot
 
-## Abilita:
-
-- Intel Virtualizzation Technology
-- Above 4G decoding
-- Hyper-Threading
-- Execute Disable Bit
-- EHCI/XHCI Hand-off
-- OS type: (Windows 10 Feautres: Windows 8/10 WHQL oppure Other)
-- DVMT Pre-Allocated(iGPU Memory): 64 MB
-- DVMT Total Gfx Mem → MAX
-
-## Impostazioni generiche, potresti non trovarne alcune.
+## Note sul BIOS:
+Avere un BIOS semplice può sembrare un bene ma non lo è affatto.
+Post installazione vi consiglio vivamente di sistemare i parametri relativi a DVMT Pre e Total, di fixare il CFG Lock e di disablilitare VT-d con l'ausilio dello strumento ru.efi
+Solo dopo aver fatto ciò potrete togliere le spunte AppleXcpmCfgLock e DisableIoMapper, serve per avere un boot più fluido togliendo patch inutili.
   
 # Dispositivo Screenshot
 ![infodp1](./Screenshot/Peripherials.png)
 ![infodp2](./Screenshot/PCIe.png)
 
 # Cosa funziona e cosa no:
-- [x] Intel UHD 630 iGPU
-- [x] ALC887 Uscite interne
-- [x] ALC887 HDMI Audio Output
+- [x] Intel UHD 620 iGPU
+- [x] Realtek ALC298
+- [x] Realtek ALC298 HDMI Audio Output
 - [x] Porte USB (Funzionano ma richiedono mappatura)
-- [x] Realtek 8118 Gaming LAN
+- [x] Intel WiFi e Bluetooth
 - [x] NVRAM
 - [x] Avvio Windows da OpenCore
+- [ ] NVIDIA GeForce MX150/MX250
+- [ ] Lettore Scheda SD integrato
+- [ ] AirDrop, Hand-Off.
 
-# Sezione Info SSDT Gigabyte Z390 UD
+# Sezione Info SSDT Xiaomi Notebook Pro 8th
 
 ![SSDT](./Screenshot/SSDT.png)
 
 ## Crediti
 
-- [Acidanthera](https://github.com/acidanthera) per OpenCore Bootloader
+- [Acidanthera](https://github.com/acidanthera) per OpenCore Bootloader;
 - [Apple](https://apple.com) per macOS;
-- [HackintoshLifeIT](https://github.com/Hackintoshlifeit) Gruppo di supporto Pre e Post Installazione
-- [Baio1977](https://github.com/Baio1977)
-- [Lorys89](https://github.com/Lorys89)
-- [Dortania](https://github.com/dortania)
-- [Daliansky](https://github.com/daliansky)
-- [Rehabman](https://github.com/RehabMan)
+- [HackintoshLifeIT](https://github.com/Hackintoshlifeit) Gruppo di supporto pre e post installazione;
+- [Dortania](https://github.com/dortania) Per la guida OpenCore.
 
 # Se avete bisogno di aiuto contattateci su [Telegram](https://t.me/HackintoshLife_it)
