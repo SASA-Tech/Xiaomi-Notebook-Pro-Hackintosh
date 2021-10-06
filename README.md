@@ -19,18 +19,21 @@
 | RAM              | 8/16 GB DDR4 2400 Mhz                |
 | NVMe             | Samsung PM961 256gb                  |
 | SMBIOS           | MacBookPro15,2                       |
-| Bootloader       | OpenCore 0.7.3                       |
+| Bootloader       | OpenCore 0.7.4                       |
 
 ![infodp1](./Screenshot/Mobo.png)
 
 ## NOTE:
-Ci sarebbe la NVIDIA GeForce MX150/MX250 2gb GDDR5 che però, non essndo comaptibile con macOS viene disattivata per quest'ultimo.
+Ci sarebbe la NVIDIA GeForce MX150/MX250 che però, non essndo comaptibile con macOS viene disattivata per quest'ultimo.
 Kexts aggiornati alle ultime versioni.
 
-## Se volete installare la Beta 7 di macOS Monterey:
-Vi lascio il config.plist rinominato in configbeta7.plist pronto da utilizzare SOLO per scaricare ed installare l'aggiornamento.
+## Se volete installare la Beta 8 di macOS Monterey:
+~~Vi lascio il config.plist rinominato in configbeta8.plist pronto da utilizzare SOLO per scaricare ed installare l'aggiornamento.
 Al termine dell'aggiornamento dovete cancellarlo e rimettere l'originale config.plist.
-È consigliabile scollegare l'Hackintosh dall'ID Apple prima di sostituire momentaneamente il config.plist
+È consigliabile scollegare l'Hackintosh dall'ID Apple prima di sostituire momentaneamente il config.plist, in alternativa usate il kexts RestrictEvents.~~
+
+Con OpenCore 0.7.4 è stato fixato questo problema dell'aggiornamento.
+Adesso potete aggiornare senza RestrictEvents.kexts e senza cambiare config.plist
 
 # Impostazioni Bios
 
