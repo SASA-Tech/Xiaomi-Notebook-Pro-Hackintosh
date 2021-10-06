@@ -21,7 +21,8 @@
 | SMBIOS           | MacBookPro15,2                       |
 | Bootloader       | OpenCore 0.7.4                       |
 
-![infodp1](./Screenshot/PC.png)
+![infodp1](./Screenshot/AboutThisMac.png)
+![infodp2](./Screenshot/PC.png)
 
 ## NOTE:
 Ci sarebbe la NVIDIA GeForce MX150/MX250 che però, non essndo comaptibile con macOS viene disattivata per quest'ultimo.
