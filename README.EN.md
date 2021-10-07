@@ -63,7 +63,7 @@ Delete config.plist by EFI > OC and rename post-install.plist to config.plist
 - [x] Intel UHD 620 iGPU
 - [x] Realtek ALC298
 - [x] Realtek ALC298 HDMI Audio Output
-- [x] Porte USB
+- [x] USB Ports
 - [x] Intel WiFi & Bluetooth
 - [x] NVRAM
 - [x] Boot Windows by OpenCore
