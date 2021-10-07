@@ -17,7 +17,8 @@
 | WiFi + Bluetooth | Intel Wireless-AC 8265               |
 | Audio            | Realtek ALC298 (layout 30/99)        |
 | RAM              | 8/16 GB DDR4 2400 Mhz                |
-| NVMe             | Samsung PM961 256gb                  |
+| NVMe macOS       | Samsung 970 Evo 256gb                |
+| NVMe Windows     | Samsung PM961 256gb                  |
 | SMBIOS           | MacBookPro15,2                       |
 | Bootloader       | OpenCore 0.7.4                       |
 
@@ -40,13 +41,14 @@ Adesso potete aggiornare senza RestrictEvents.kexts e senza cambiare config.plis
 
 ## Disabilita:
 
-- Fast Boot
+- Fastboot
 - Secure Boot
 
 ## Note sul BIOS:
 Avere un BIOS semplice può sembrare un bene ma non lo è affatto.
 Post installazione vi consiglio vivamente di sistemare i parametri relativi a DVMT Pre e Total, di fixare il CFG Lock e di disablilitare VT-d con l'ausilio dello strumento ru.efi
 Solo dopo aver fatto ciò potrete togliere le spunte AppleXcpmCfgLock e DisableIoMapper, serve per avere un boot più fluido togliendo patch inutili.
+Ho constatato che in post installazione, il Fastboot può essere abilitato senza portare nessun fastidio ad OpenCore, velocizzando anzi, anche se di poco, il boot di quest'ultimo.
   
 # Dispositivo Screenshot
 ![infodp1](./Screenshot/Peripherials.png)
