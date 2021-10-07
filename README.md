@@ -49,6 +49,10 @@ Avere un BIOS semplice può sembrare un bene ma non lo è affatto.
 Post installazione vi consiglio vivamente di sistemare i parametri relativi a DVMT Pre e Total, di fixare il CFG Lock e di disablilitare VT-d con l'ausilio dello strumento ru.efi
 Solo dopo aver fatto ciò potrete togliere le spunte AppleXcpmCfgLock e DisableIoMapper, serve per avere un boot più fluido togliendo patch inutili.
 Ho constatato che in post installazione, il Fastboot può essere abilitato senza portare nessun fastidio ad OpenCore, velocizzando anzi, anche se di poco, il boot di quest'ultimo.
+
+# Post Installazione:
+
+Eliminare config.plist da EFI > OC e rinominare post-install.plist in config.plist
   
 # Dispositivo Screenshot
 ![infodp1](./Screenshot/Peripherials.png)
