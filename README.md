@@ -10,18 +10,18 @@
 
 # Specifiche:
 
-| Componenti       | Modello                              |
-| ---------------- | ------------------------------------ |
-| Notebook         | Xiaomi Notebook Pro 2017/2018        | 
-| CPU              | Intel Core i5 8250U/i7 8550U         | 
-| iGPU             | Intel® UHD Graphics 620              |
-| WiFi + Bluetooth | Intel Wireless-AC 8265               |
-| Audio            | Realtek ALC298 (layout 30/99)        |
-| RAM              | 8/16 GB DDR4 2400 Mhz                |
-| NVMe macOS       | Samsung 970 Evo 256gb                |
-| NVMe Windows     | Samsung PM961 256gb                  |
-| SMBIOS           | MacBookPro15,2                       |
-| Bootloader       | OpenCore 0.7.4                       |
+| Componenti       | Modello                                    |
+| ---------------- | ------------------------------------       |
+| Notebook         | Xiaomi Notebook Pro 2017/2018              | 
+| CPU              | Intel Core i5 8250U/i7 8550U               | 
+| iGPU             | Intel® UHD Graphics 620                    |
+| WiFi + Bluetooth | Intel Wireless-AC 8265                     |
+| Audio            | Realtek ALC298 (layout 30/99)              |
+| RAM              | 8/16 GB DDR4 2400 Mhz                      |
+| NVMe macOS       | Samsung 970 Evo 256gb                      |
+| NVMe Windows     | Samsung PM961 256gb                        |
+| SMBIOS           | MacBookPro15,2 (Pre-realase MacBookPro15,4)|
+| Bootloader       | OpenCore 0.7.4 (Pre-realase OpenCore 0.7.5)|
 
 ![infodp1](./Screenshot/AboutThisMac.png)
 ![infodp2](./Screenshot/PC.png)
