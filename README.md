@@ -23,8 +23,7 @@
 | SMBIOS           | MacBookPro15,2                       |
 | Bootloader       | OpenCore 0.7.4                       |
 
-![infodp0](./Screenshot/AboutThisMac.png)
-![infodp1](./Screenshot/AboutThisMac2.png)
+![infodp1](./Screenshot/AboutThisMac.png)
 ![infodp2](./Screenshot/PC.png)
 
 ## NOTE:
